@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Game page of improv.live where games are shown based on the number of players chosen from the dropdown menu.">
+  <meta name="author" content="Kristen Loyd">
+  <title>Improv.live</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../stypes/css/header.css" rel="stylesheet" type="text/css">
+  <link href="../styles/css/footer.css" rel="stylesheet" type="text/css">
+  <link href="../styles/css/game.css" rel="stylesheet" type="text/css">
+  <!-- Link JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Link Javascript -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <header class='header'>
+    <div class='navbar navbar-default navbar-fixed-top'>
+      <div class='container'>
+        <div class='row'>
+          <!-- Icon -->
+          <a class="navbar-brand pull-left" href="index.html"><img class='logo' src="https://openclipart.org/favicon.ico" alt="Improv.live logo"></a>
+          <!--<a href='index_copy.html' class='navbar-brand pull-left'></a>-->
+          <!-- Button for nav links for small windows -->
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+	    <span class='sr-only'>Toggle Navigation</span>
+	    <span class='icon-bar'></span>
+	    <span class='icon-bar'></span>
+	            <span class='icon-bar'></span>
+		    </button>
+          <!-- List of nav links for collapse button -->
+          <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='game.html'>Games</a></li>
+            <li><a href='wheel.html'>Wheel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.navbar -->
+  </header>
+
+  <main class='main'>
+    <div class='container'>
+      <div class='jumbotron'>
+        <h1>Looking for a game?</h1>
+        <p>You've come to the right place.</p>
+        <p>Simply choose the number of players from the dropdown menu, press the "Search" button, and browse.</p>
+      </div>
+    </div>
+    <div class='container'>
+      <section class='filter'>
+
+        <!--<div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>-->
+        <div class='col-lg-3 col-md-3 col-sm-8 col-xs-8 no-padding'>
+
+          <div class='dropdown' id='dropdown-games'>
+            <button class='btn btn-primary dropdown-toggle btn-sm' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>
+          <h2>Players</h2>
+          <h3>&nbsp;</h3>
+          <span class='caret'></span>
+        </button>
+            <ul class='dropdown-menu'>
+              <li><input type='checkbox' class='col-xs-1'>
+                <p class='col-xs-11'>1</p>
+              </li>
+              <li><input type='checkbox' class='col-xs-1'>
+                <p class='col-xs-11'>2</p>
+              </li>
+              <li><input type='checkbox' class='col-xs-1'>
+                <p class='col-xs-11'>3</p>
+              </li>
+              <li><input type='checkbox' class='col-xs-1'>
+                <p class='col-xs-11'>4</p>
+              </li>
+              <li><input type='checkbox' class='col-xs-1'>
+                <p class='col-xs-11'>5+</p>
+              </li>
+            </ul>
+          </div>
+          <!-- /.dropdown-games -->
+        </div>
+        <!--<div class='pull-left col-lg-4 col-md-4 col-sm-12 col-xs-12'>-->
+        <div class='col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding pull-left'>
+          <!--<div class='col-lg-3 col-md-3 col-sm-4 col-xs-4'>-->
+          <!--<div class='pull-left'>-->
+          <button type='button' class='btn btn-default'>Search</button>
+          <!--</div>-->
+        </div>
+        <div class='col-lg-6 col-md-6 col-xs-0'>
+        </div>
+      </section>
+      <!-- /.filter -->
+    </div>
+    <div class='container'>
+      <section class='games'>
+        <h1 class='text-center'>Games</h1>
+        <div class='col-xs-12 columns' id='idv-games'>
+          <article class='col-xs-12'>
+            <div class='game-name'>
+              <h2>Game 1</h2>
+            </div>
+            <div class='information'>
+              <div class='num-players col-sm-3 col-xs-12'>
+                <img class='col-sm-12 col-xs-4' src='https://cdn2.iconfinder.com/data/icons/user-interface-essentials-outline/48/ui-49-128.png' alt='player icon' aria-hidden='true'></img>
+                <p class='col-sm-12 col-xs-8'>1 Players</p>
+              </div>
+              <div class='directions col-sm-9 col-xs-12'>
+                <p>Game information</p>
+              </div>
+            </div>
+          </article>
+          <article class='col-xs-12'>
+            <div class='game-name'>
+              <h2>Game 2</h2>
+            </div>
+            <div class='information'>
+              <div class='num-players col-md-3 col-sm-3 col-xs-12'>
+                <img class='col-sm-12 col-xs-4' src='https://cdn2.iconfinder.com/data/icons/user-interface-essentials-outline/48/ui-49-128.png' alt='player icon' aria-hidden='true'></img>
+                <p class='col-sm-12 col-xs-8'>2 Players</p>
+              </div>
+              <div class='directions cold-md-9 col-sm-9 col-xs-12'>
+                <p>Game info</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- /.idv-games -->
+      </section>
+      <!-- /.games -->
+    </div>
+    </div>
+  </main>
+
+  <footer class='footer'>
+    <div class='container'>
+      <div class='column'>
+        <a class='pull-left logo col-lg-4 col-md-4 col-sm-2 col-xs-2' href='index.html'><img src='https://openclipart.org/favicon.ico' alt='Improv.live logo'></a>
+        <p class='col-lg-6 col-md-6 col-sm-6 col-xs-6'> Have feedback for Improv.live? Contact the developer via Twitter or LinkedIn
+          <p>
+            <a class='col-lg-1 col-md-1 col-sm-1 col-xs-1' href='https://www.linkedin.com/in/kristen-loyd-34984a92/'><img class='logo' src='https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca' alt="LinkedIn logo linking to developer's profile"></a>
+            <a class='col-lg-1 col-md-1 col-sm-1 col-xs-1' href='https://twitter.com/Biebop1'><img class='logo' src='https://abs.twimg.com/errors/logo23x19.png' alt="Twitter logo linking to developer's profile"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

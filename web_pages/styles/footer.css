@@ -1,0 +1,24 @@
+footer {
+  position: fixed;
+  #display: flex;
+  #flex-wrap: wrap;
+  width: 100%;
+  min-height: 20px;
+  max-height: 50px;
+  bottom:0;
+  background: #071E22; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#071E22, #145450); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#071E22, #145450); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#071E22, #145450); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#071E22, #145450); /* Standard syntax */
+  color: #DCEDFF;
+}
+
+
+footer .logo {
+  width: 30px;
+}
+
+footer p {
+  margin-left: 10px;
+}

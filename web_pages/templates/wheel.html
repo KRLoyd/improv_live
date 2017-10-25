@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Wheel page of improv.live. Wheel is populated based on what is clicked on in the dropdown menu.">
+  <meta name="author" content="Kristen Loyd">
+  <title>Improv.live</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/3.3.7/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+  <link href="../styles/css/header.css" rel="stylesheet" type="text/css">
+  <link href="../styles/css/footer.css" rel="stylesheet" type="text/css">
+  <link href="../styles/css/wheel.css" rel="stylesheet" type="text/css">
+  <!-- Link JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Link Javascript -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<script type='text/javascript' src='../scripts/wheel.js'></script>
+
+<body>
+
+  <header class='header'>
+    <div class='navbar navbar-default navbar-fixed-top'>
+      <div class='container'>
+        <div class='row'>
+          <!-- Icon -->
+          <a class="navbar-brand pull-left" href="index.html"><img class='logo' src="https://openclipart.org/favicon.ico" alt="Improv.live logo"></a>
+          <!--<a href='index_copy.html' class='navbar-brand pull-left'></a>-->
+          <!-- Button for nav links for small windows -->
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+	    <span class='sr-only'>Toggle Navigation</span>
+	    <span class='icon-bar'></span>
+	    <span class='icon-bar'></span>
+	            <span class='icon-bar'></span>
+		    </button>
+          <!-- List of nav links for collapse button -->
+          <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='game.html'>Games</a></li>
+            <li><a href='wheel.html'>Wheel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.navbar -->
+  </header>
+
+  <main class='main'>
+    <div class='container'>
+      <div class='jumbotron'>
+        <h1>Let the Wheel Decide Your Game or Prompt!</h1>
+        <p>Make your selection, press the "Spin" button, and play!</p>
+      </div>
+    </div>
+
+    <div class='container'>
+      <section class='filter col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+        <div class='dropdown' id='dropdown-games'>
+          <button class='btn btn-primary dropdown-toggle btn-sm' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>
+            <h2>Wheel Type</h2>
+            <span class='caret'></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Players</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5+
+              <li>
+                <li class='dropdown-header'>Prompts</li>
+                <li>Things</li>
+                <li>Locations</li>
+                <li>Occupations</li>
+                <li>Relationships</li>
+          </ul>
+          <!-- /.dropdown-menu -->
+        </div>
+      </section>
+      <!-- /.filter -->
+      <section class='theWheel col-lg-8 col-md-8 col-sm-8 col-xs-12 no-padding'>
+        <div id="wrapper" class="flexcontainer">
+          <div id="wheel">
+            <div id="inner-wheel">
+              <div class="sec">
+                <p class="section">First</p>
+              </div>
+              <div class="sec">
+                <p class="section">Second</p>
+              </div>
+              <div class="sec">
+                <p class="section">Third</p>
+              </div>
+              <div class="sec">
+                <p class="section">Fourth</p>
+              </div>
+              <div class="sec">
+                <p class="section">Fifth</p>
+              </div>
+              <div class="sec">
+                <p class="section">Sixth again</p>
+              </div>
+            </div>
+            <div id="spin">
+              <div id="inner-spin"></div>
+            </div>
+            <div id="shine"></div>
+          </div>
+          <!--<div id="txt">WOAH SOME TEXT</div>-->
+        </div>
+      </section>
+      <!-- ./theWheel -->
+    </div>
+  </main>
+
+  <footer class='footer'>
+    <div class='container'>
+      <div class='column'>
+        <a class='pull-left logo col-lg-4 col-md-4 col-sm-2 col-xs-2' href='index.html'><img src='https://openclipart.org/favicon.ico' alt='Improv.live logo'></a>
+        <p class='col-lg-6 col-md-6 col-sm-6 col-xs-6'> Have feedback for Improv.live? Contact the developer via Twitter or LinkedIn
+          <p>
+            <a class='col-lg-1 col-md-1 col-sm-1 col-xs-1' href='https://www.linkedin.com/in/kristen-loyd-34984a92/'><img class='logo' src='https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca' alt="LinkedIn logo linking to developer's profile"></a>
+            <a class='col-lg-1 col-md-1 col-sm-1 col-xs-1' href='https://twitter.com/Biebop1'><img class='logo' src='https://abs.twimg.com/errors/logo23x19.png' alt="Twitter logo linking to developer's profile"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

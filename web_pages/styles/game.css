@@ -1,0 +1,123 @@
+body {
+  background: #071E22;
+  color: DCEDFF;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  #min-height: 80px;
+}
+
+main .container {
+  width: 100%;
+  color: #DECDFF;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px;
+  color: #DECDFF;
+}
+
+h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #DECDFF;
+}
+
+.jumbotron {
+  padding: 30px;
+  background: #145450;
+  #color: #DECDFF;
+}
+
+.jumbotron h1 {
+  font-size: 35px;
+  color: #DECDFF;
+}
+
+.jumbotron p {
+  font-size: 15px;
+  color: #DECDFF;
+}
+
+.dropdown button{
+  width: 75%;
+  height: auto;
+  white-space: normal;
+}
+
+#dropdown-games {
+  min-size: 50px;
+  max-size: 200px;
+}
+
+.dropdown h2 {
+  #word-wrap: break-word;
+}
+
+.dropdown-menu {
+  margin: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  background: #145450;
+}
+
+.dropdown-menu p {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #DECDFF;
+}
+.dropdown-toggle h3 {
+    white-space: normal;
+}
+#idv-games {
+  padding: 0px;
+}
+
+.container .games article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  #margin: 10px;
+  margin: 5px;
+  padding-bottom: 10px;
+  #padding: 5px;
+  border: solid 2px #5BA551;
+  border-radius: 4px;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+.information img {
+  #padding: 0px 10px;
+  padding: 0px;
+  max-width: 70px;
+  max-height: 70px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.game-name {
+  padding: 10px;
+}
+
+.game-name h2 {
+  color: #5BA551;
+}
+
+.num-players p {
+  padding-left: 0px;
+  vertical-align: middle;
+}
+
+.no-padding {
+  padding: 0px;
+}
