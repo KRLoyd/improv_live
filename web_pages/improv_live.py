@@ -15,6 +15,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 @app.route('/')
+@app.route('/index')
 def index():
     """
     Method to render the index page
