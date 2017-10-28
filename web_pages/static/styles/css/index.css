@@ -1,0 +1,39 @@
+* {
+    font-family: OpenDyslexicAlta-Regular;
+}
+
+body {
+  background: #071E22;
+  color: #DCEDFF;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  top: 100px;
+  width: 100%;
+  min-height: 80px;
+}
+
+main .container {
+  width: 100%;
+}
+
+.welcome-header {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #5BA551;
+}
+
+.main img {
+  padding: 30px;
+  width: 100%;
+}
+
+.row:last-child {
+  padding-bottom: 30px;
+}
