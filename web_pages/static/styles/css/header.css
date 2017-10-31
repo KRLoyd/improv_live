@@ -21,6 +21,7 @@
 
 .navbar-default {
   border-color: #071e22;
+  height: 65px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -29,4 +30,8 @@
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #5ba551;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
 }
