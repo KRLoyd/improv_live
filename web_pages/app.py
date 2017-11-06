@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-Script to start a Flask web application and route to 3 pages for improv.live
+Script to start a Flask web application and route for the following requests
+
+- GET: /, /index, /game, /wheel, /wheelGame, /wheelPrompt
 """
 
 # Imports
