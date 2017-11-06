@@ -21,6 +21,7 @@
 
   <!-- Link JQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="static/scripts/game_page.js"></script>
   <!-- Link Javascript -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -32,7 +33,7 @@
       <div class='container'>
         <div class='row'>
           <!-- Icon -->
-          <a class="navbar-brand pull-left" href="index.html"><img class='logo' src="static/icons/medium_cropped.png" alt="Improv.live logo"></a>
+          <a class="navbar-brand pull-left" href="index"><img class='logo' src="static/icons/medium_cropped.png" alt="Improv.live logo"></a>
           <!--<a href='index_copy.html' class='navbar-brand pull-left'></a>-->
           <!-- Button for nav links for small windows -->
           <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -74,21 +75,11 @@
           <span class='caret'></span>
         </button>
             <ul class='dropdown-menu'>
-              <li><input type='checkbox' class='col-xs-1'>
-                <p class='col-xs-11'>1</p>
-              </li>
-              <li><input type='checkbox' class='col-xs-1'>
-                <p class='col-xs-11'>2</p>
-              </li>
-              <li><input type='checkbox' class='col-xs-1'>
-                <p class='col-xs-11'>3</p>
-              </li>
-              <li><input type='checkbox' class='col-xs-1'>
-                <p class='col-xs-11'>4</p>
-              </li>
-              <li><input type='checkbox' class='col-xs-1'>
-                <p class='col-xs-11'>5+</p>
-              </li>
+              <li><input type='checkbox' data-id="1">1</li>
+              <li><input type='checkbox' data-id="2">2</li>
+              <li><input type='checkbox' data-id="3">3</li>
+              <li><input type='checkbox' data-id="4">4</li>
+              <li><input type='checkbox' data-id="5+">5+</li>
             </ul>
           </div>
           <!-- /.dropdown-games -->
@@ -97,7 +88,7 @@
         <div class='col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding pull-left'>
           <!--<div class='col-lg-3 col-md-3 col-sm-4 col-xs-4'>-->
           <!--<div class='pull-left'>-->
-          <button type='button' class='btn btn-default'>Search</button>
+          <button type='button' class='btn btn-default' id='search-button'>Search</button>
           <!--</div>-->
         </div>
         <div class='col-lg-6 col-md-6 col-xs-0'>
