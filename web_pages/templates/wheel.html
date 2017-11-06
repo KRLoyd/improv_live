@@ -21,9 +21,11 @@
   <link href="static/styles/css/wheel.css" rel="stylesheet" type="text/css">
   <!-- Link JQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="static/scripts/wheel_page.js"></script>
   <!-- Link Javascript -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/scripts/wheel.js"></script>
+1
 </head>
 
 <body>
@@ -71,43 +73,42 @@
           </button>
           <ul class="dropdown-menu">
             <li class="dropdown-header">Players</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5+
-              <li>
-                <li class='dropdown-header'>Prompts</li>
-                <li>Things</li>
-                <li>Locations</li>
-                <li>Occupations</li>
-                <li>Relationships</li>
+            <li class="players">1</li>
+            <li class="players">2</li>
+            <li class="players">3</li>
+            <li class="players">4</li>
+            <li class="players">5+</li>
+            <li class='dropdown-header'>Prompts</li>
+            <li class="prompt">Things</li>
+            <li class="prompt">Locations</li>
+            <li class="prompt">Occupations</li>
+            <li class="prompt">Relationships</li>
           </ul>
           <!-- /.dropdown-menu -->
         </div>
       </section>
       <!-- /.filter -->
-      <section class='theWheel col-lg-8 col-md-8 col-sm-8 col-xs-12 no-padding'>
+      <section class="theWheel col-lg-8 col-md-8 col-sm-8 col-xs-12 no-padding">
         <div id="wrapper" class="flexcontainer">
           <div id="wheel">
             <div id="inner-wheel">
               <div class="sec">
-                <p class="section">First</p>
+                <p class="section" id="first"></p>
               </div>
               <div class="sec">
-                <p class="section">Second</p>
+                <p class="section" id="second"></p>
               </div>
               <div class="sec">
-                <p class="section">Third</p>
+                <p class="section" id="third"></p>
               </div>
               <div class="sec">
-                <p class="section">Fourth</p>
+                <p class="section" id="fourth"></p>
               </div>
               <div class="sec">
-                <p class="section">Fifth</p>
+                <p class="section" id="fifth"></p>
               </div>
               <div class="sec">
-                <p class="section">Sixth again</p>
+                <p class="section" id="sixth"></p>
               </div>
             </div>
             <div id="spin">
