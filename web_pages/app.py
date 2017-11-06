@@ -45,6 +45,38 @@ def game(game_list=None):
     """
     return render_template("game.html")
 
+@app.route('/gameList', methods=['POST'])
+def game_list():
+    """
+    Method to route gameList POST HTTP requests
+    """
+    request_json = request.get_json()
+    players = []
+    for item in request_json.get('players'):
+        players.append(item)
+    items = []
+    for player in players:
+        items.extend(list(col_game.find({"num_player":player})))
+    all_games = {}
+    i = 0
+    for game in items:
+        game_dict = {}
+        game_dict['name'] = game['name']
+        game_dict['description'] = game['description']
+
+        separator = ''
+        playerStr = ''
+        for player_count in game['num_player']:
+            playerStr += separator
+            playerStr += str(player_count)
+            separator = ", "
+        game_dict['num_player'] = playerStr
+
+        all_games[i] = game_dict
+        i += 1
+    return jsonify(all_games)
+
+
 @app.route('/wheel', methods=['GET'])
 def wheel():
     """
