@@ -36,14 +36,14 @@ def index():
     """
     Method to render the index page
     """
-    return render_template("./web_pages/templates/index.html")
+    return render_template("index.html")
 
 @app.route('/game', methods=['GET'])
 def game(game_list=None):
     """
     Method to route game GET HTTP requests
     """
-    return render_template("web_pages/templates/game.html")
+    return render_template("game.html")
 
 @app.route('/gameList', methods=['POST'])
 def game_list():
@@ -83,7 +83,7 @@ def wheel():
     Method to route wheel GET HTTP requests
     """
 
-    return render_template("web_pages/templates/wheel.html")
+    return render_template("wheel.html")
 
 @app.route('/wheelGame', methods=['POST'])
 def wheel_game():
