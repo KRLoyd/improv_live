@@ -14,7 +14,6 @@ main {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
-  #min-height: 80px;
 }
 
 main .container {
@@ -39,7 +38,6 @@ h3 {
 .jumbotron {
   padding: 30px;
   background: #145450;
-  #color: #DECDFF;
 }
 
 .jumbotron h1 {
@@ -61,10 +59,6 @@ h3 {
 #dropdown-games {
   min-size: 50px;
   max-size: 200px;
-}
-
-.dropdown h2 {
-  #word-wrap: break-word;
 }
 
 .dropdown-menu {
@@ -92,10 +86,8 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  #margin: 10px;
   margin: 5px;
   padding-bottom: 10px;
-  #padding: 5px;
   border: solid 2px #5BA551;
   border-radius: 4px;
   min-width: 200px;
@@ -103,7 +95,6 @@ h3 {
 }
 
 .information img {
-  #padding: 0px 10px;
   padding: 0px;
   max-width: 70px;
   max-height: 70px;
