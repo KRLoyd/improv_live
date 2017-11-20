@@ -67,6 +67,7 @@ h3 {
   color: #5BA551;
 }
 
+
 .container>.games>article {
   #position: relative;
   #display: flex;
@@ -105,7 +106,7 @@ h3 {
 /* Wheel Styling */
 *{margin:0;padding:0; }
 
-a{
+a {
     color:#34495e;
 }
 
@@ -185,13 +186,13 @@ a{
     height: 0;
     border-style: solid;
     border-width: 130px 75px 0;
-  #border-width: 50vmin 40vmin 0;
-  border-color: #19c transparent;
-  transform-origin: 75px 129px;
-  #transform-origin: 40vmin 49vmin;
-  left:50px;
-  top:-4px;
-  opacity:1;
+    #border-width: 50vmin 40vmin 0;
+    border-color: #19c transparent;
+    transform-origin: 75px 129px;
+    #transform-origin: 40vmin 49vmin;
+    left:50px;
+    top:-4px;
+    opacity:1;
 }
 
 #wheel div.sec:nth-child(1){
@@ -239,7 +240,7 @@ a{
     border-color: #d35400 transparent;
 }
 
-#wheel div.sec:nth-child(6){
+#wheel div.sec:nth-child(6) {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -250,18 +251,73 @@ a{
 
 
 #wheel div.sec .section{
-    margin-top: -100px;
+    #margin-top: -100px;
+    #margin-top: -100px;
   color: rgba(0,0,0,0.8);
   position: relative;
   z-index: 10000000;
   display: block;
   text-align: center;
   white-space: normal;
-  font-size: 18px;
-  margin-left: -30px;
+  #font-size: 18px;
+  #font-size: 16px;
+  font-size: 14px;
+  #margin-left: -30px;
+  ##
+  #margin-left: -30px;
+  ##
 
   #text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
 }
+
+#wheel div.sec .section:nth-child(1){
+    #margin-top: -100px;
+}
+
+#wheel div.sec .section:nth_child(2){
+    #margin-top: -100px;
+}
+
+#wheel div.sec .section:nth-child(3){
+    #margin-top: -100px;
+}
+#wheel div.sec .section:nth-child(4){
+    #margin-top: -100px;
+}
+
+#wheel div.sec .section:nth-child(5){
+    #margin-top: -100px;
+}
+
+#wheel div.sec .section:nth-child(6){
+    #margin-top: -150px;
+}
+
+#first {
+    margin-top: -110px;
+    margin-left: -30px;
+}
+#second {
+    margin-top: -105px;
+    margin-left: -40px;
+}
+#third {
+    margin-top: -100px;
+    margin-left: -30px;
+}
+#fourth {
+    margin-top: -110px;
+    margin-left: -30px;
+}
+#fifth {
+    margin-top: -120px;
+    margin-left: -30px;
+}
+#sixth {
+    margin-top: -120px;
+    margin-left: -30px;
+}
+
 
 #spin{
     width:68px;
@@ -294,6 +350,7 @@ a{
   width:68px;
   height:68px;
   display:block;
+    font-family: OpenDyslexicAlta-Regular;
 }
 
 #spin:before{
