@@ -72,7 +72,8 @@ def game_list():
             separator = ", "
         game_dict['num_player'] = playerStr
 
-        all_games[i] = game_dict
+        if game_dict not in all_games.values():
+            all_games[i] = game_dict
         i += 1
     return jsonify(all_games)
 
