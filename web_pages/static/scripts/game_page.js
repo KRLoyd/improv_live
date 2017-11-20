@@ -58,7 +58,9 @@ $(function() {
 		}
 	    },
 	    error: function (error) {
-		alert("An error occured: " + error.status + " " + error.statusText);
+		alert("An error occured: "
+		      + error.status + " "
+		      + error.statusText);
 	    }
 	});
     });
