@@ -1,10 +1,8 @@
 // Wheel Javascript
 
 //set default degree (360*5)
-//var degree = 1800;
 let degree = 1800;
 //number of clicks = 0
-//var clicks = 0;
 let clicks = 0;
 
 $(document).ready(function() {

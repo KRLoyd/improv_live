@@ -3,7 +3,6 @@ $(function() {
     $('li.prompt').click(function () {
 	let promptList=[]
 	let postDict = {}
-	console.log("prompt: ", $(this).text())
 	let to_query = $(this).text();
 	promptList.push(to_query);
 	postDict['prompt'] = promptList;
@@ -22,7 +21,9 @@ $(function() {
 		$('#sixth').text(result[5]);
 	    },
 	    error: function (error) {
-		alert("An error occured: " + error.status + " " + error.statusText);
+		alert("An error occured: "
+		      + error.status + " "
+		      + error.statusText);
 	    }
 	});
     });
@@ -48,7 +49,9 @@ $(function() {
 		$('#sixth').text(result[5]);
 	    },
 	    error: function (error) {
-		alert("An error occured: " + error.status + " " + error.statusText);
+		alert("An error occured: "
+		      + error.status + " "
+		      + error.statusText);
 	    }
 	});
     });
