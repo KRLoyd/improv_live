@@ -1,5 +1,8 @@
-# Improv.live
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24781621/34276993-cc4267f2-e658-11e7-8783-8e60082179b7.png" alt="Improv.live logo"/>
+</p>
 
+# Improv.live
 Improv.live is a web application to provide information about improvisational games as well as a wheel to help choose prompts or games per a user's specifications.
 
 This project utilizes a stack consisting of: Linux, Nginx, MongoDB, and Python.
@@ -74,10 +77,26 @@ $ mongorestore dump/
 python3 -m app
 ```
 
-- In your browser, go to “localhost:5000/index”
-From there, you can access all the pages from links in the index page. 
+- In your browser, go to “localhost:5000/index”. From there, you can access all the pages from links in the index page. 
+![il_index_0](https://user-images.githubusercontent.com/24781621/34277360-3a2e228c-e65a-11e7-9d8e-4d6e310b99f8.png)
+![il_inddex_1](https://user-images.githubusercontent.com/24781621/34277228-b3342178-e659-11e7-9b7c-6df1ea1ddddd.png)
 
-To see the other pages individually, you can go to “localhost:5000/wheel” and “localhost:5000/game”
+- Wheel Page: "localhost:5000/wheel"
+![il_wheel_0](https://user-images.githubusercontent.com/24781621/34277398-5e05ceee-e65a-11e7-81d6-301e6d53afa6.png)
+
+Once you make a selection from the dropdown menu, the wheel is populated with choices. 
+Click "Spin" to have the wheel make your random selection!
+![il_wheel_3](https://user-images.githubusercontent.com/24781621/34277408-67b0d2f4-e65a-11e7-9964-9f9af24800c5.png)
+
+- Game Page: "localhost:5000/game"
+Click on the dropdown menu to make a selection.
+![il_game_0](https://user-images.githubusercontent.com/24781621/34277518-f419ebfe-e65a-11e7-8ff5-f31f4b84a583.png)
+Check the boxes for the number of players for the games. 
+![il_game_2](https://user-images.githubusercontent.com/24781621/34277507-e59d133a-e65a-11e7-96df-132dfe15bc3f.png)
+Once you click "Search" the page will be populated and you can scroll through the choices available.
+![il_game_3](https://user-images.githubusercontent.com/24781621/34277508-e6afc696-e65a-11e7-89a5-795a624223e0.png)
+
+
 
 ## To-Do
 
@@ -103,3 +122,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Spinning Wheel: [Andre Cortellini](https://codepen.io/AndreCortellini/) via [CodePen](https://codepen.io/AndreCortellini/pen/vERwmL?page=1&)
 * Mentorship: Rona Chong   [GitHub](https://github.com/ronachong)  |  [LinkedIn](https://www.linkedin.com/in/rona-chong-15b167b6/)
+* Logo: Carrie Ybay   [GutHub](https://github.com/hicarrie)  |  [LinkedIn](https://www.linkedin.com/in/carrie-ybay/)
