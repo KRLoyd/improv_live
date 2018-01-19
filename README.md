@@ -100,9 +100,9 @@ Once you click "Search" the page will be populated and you can scroll through th
 
 ## To-Do
 
-- [ ] Console: update to work with MongoDB instead of SQLALchemy
 - [ ] Tests: update console tests to work with MongoDB
 - [ ] Tests: add tests for MongoDB
+- [ ] Create console to work with MongoDB
 - [ ] UX (Wheel Page): split drop-down menu into 2 (prompts, games)
 - [ ] UX: redo drop-down menus on all pages, style is wonky
 - [ ] UX (Game Page): redo style of resizing game information with the window
