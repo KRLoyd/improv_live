@@ -45,9 +45,9 @@ $ sudo apt-get install -y mongodb-org
 
 - Flask and related extentions
 ```
-$ pip install Flask
+$ pip install flask
 $ pip install flask-cors
-$ pip install Flask-PyMongo
+$ pip install flask_pymongo
 ```
 
 ### Installing
